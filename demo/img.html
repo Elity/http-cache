@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <img id="img1" src="https://res.shiguangkey.com/file/201904/03/20190403111833012411567.png" />
+    </div>
+    <br /><br />
+    <button onclick="fetch(img1.src).then(alert)">fetch加载图片1</button>
+    <button onclick="fetch(img1.src,{mode: 'no-cors'}).then(alert)">换种fetch方式加载图片1</button>
+    <br /><br />
+    <div>
+      <img
+        id="img2"
+        src="https://res.shiguangkey.com/file/201904/03/20190403111726764022151.png"
+        crossorigin="anonymous"
+      />
+    </div>
+    <br />
+    <button onclick="fetch(img2.src).then(alert)">fetch加载图片2</button>
+  </body>
+</html>
